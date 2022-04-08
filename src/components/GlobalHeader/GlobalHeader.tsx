@@ -4,8 +4,10 @@ export interface GlobalHeaderProps {
   label: string;
 }
 
-const GlobalHeader = (props: GlobalHeaderProps) => {
-  return <button>{props.label}</button>;
-};
+class GlobalHeader extends React.Component<any, any> {
+  render() {
+      return <button>{this.props.label}</button>;
+  }
+}
 
 export default GlobalHeader;
